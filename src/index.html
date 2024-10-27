@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Car</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header Start -->
+    <section class="bg-[#14176C]  font-[16px]  w-full md:p-3  items-start justify-around hidden sm:flex ">
+
+        <div class="flex items-center justify-normal gap-4">
+            <div class="flex items-center justify-center gap-2">
+                <i class="fa-solid fa-phone-volume text-gray-500"></i>
+            <a class="text-white" href="#">
+                +৮৮-০১৭৫৪৪৬৯..</a>
+            </div>
+    
+    
+            <div class="flex items-center justify-center gap-2">
+                <i class="fa-solid fa-location-dot text-gray-500"></i>
+                    <p  class="text-white">ময়মনসিংহ, বাংলাদেশ </p>
+            </div>
+    
+        </div>
+    
+        <div class="flex items-center justify-normal gap-5">
+            <div class="flex items-center justify-center gap-2">
+                <i class="fa-regular fa-envelope text-gray-500"></i>
+            <a  class="text-white" href="#">info@rent.com</a>
+            </div>
+    
+            <div class="flex items-center justify-center gap-2">
+                <i class="fa-regular fa-clock text-gray-500"></i>
+                <p  class="text-white">রবি-বৃহস্পতি: 10:00am - 09:00pm</p>
+            </div>
+        </div>
+    
+        
+    
+    </section>
+
+    <section class="w-full h-[850px] bg-cover bg-center relative" style="background-image: url(/images/bg-1.jpg);">
+     
+
+<nav class="  ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/images/logo-3.svg" class="h-8 hover:text-[#F7A400]" alt="" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white hover:text-[#F7A400]">গাড়ী ভাড়া.</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default group">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse ">
+          <li>
+            <a href="#" class="block py-2 px-3 text-white  text-lg hover:text-[#F7A400] " aria-current="page">হোম</a>
+          </li>
+          <li>
+             <a href="#" class="block py-2 px-3 text-white  text-lg hover:text-[#F7A400]">আমাদের সম্পর্কে</a>
+
+          </li>
+          <li>
+           <!-- <a href="#" class="block py-2 px-3 text-white  text-lg hover:text-[#F7A400]">সেবা সমূহ</a> --> 
+           <div class=" flex  -200 ">
+            <div class="group relative cursor-pointer py-2">
+        
+                <div class="flex items-center justify-between space-x-5  px-4">
+                    <a href="#" class="menu-hover text-white text-base font-medium lg:mx-4 hover:text-[#F7A400] " onClick="">
+                        সেবা সমূহ
+                    </a>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6 text-white hover:text-[#F7A400]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </div>
+        
+                <div
+                    class="invisible absolute z-50 flex rounded-md w-full flex-col bg-gradient-to-r from-zinc-500 to-slate-500  py-1 px-7 text-gray-800 shadow-xl group-hover:visible">
+        
+                    <a href="#" class="my-2 block border-b  border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
+                        Sunday
+                    </a>
+        
+                    <a href="#"  class="my-2 block border-b border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
+                        Monday
+                    </a>
+        
+                    <a href="#"  class="my-2 block border-b border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
+                        Tuesday
+                    </a>
+        
+                    <a href="#"  class="my-2 block border-b border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
+                        Wednesday
+                    </a>
+        
+                    <a  href="#"  class="my-2 block border-b border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
+                        Thursday
+                    </a>
+        
+                    <a href="#"  class="my-2 block border-b border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
+                        Friday
+                    </a>
+        
+                    
+        
+                </div>
+            </div>
+        </div>
+            
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-white  text-lg hover:text-[#F7A400]">ব্লগ</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-white text-lg hover:text-[#F7A400]">যোগাযোগ </a>
+          </li>
+          <div class="bg-black p-4 flex items-center justify-center gap-x-3 cursor-pointer rounded-2xl hover:bg-gray-900">
+            <p class="text-white font-semibold">মোবাইল অ্যাপ</p>
+            <i class="fa-solid fa-square-arrow-up-right text-white"></i>
+
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mx-auto ">
+    <p class="text-4xl font-semibold flex items-center justify-center pt-36 pl-10  text-white">বাংলাদেশের সবচেয়ে বৃহৎ <br> <br> গাড়ি ভাড়া সেবা</p>
+
+    <!--button start  -->
+    <div class="flex items-center justify-center  pt-28  mb-4">   <a href="#_" class="px-10 py-3 items-center relative rounded group overflow-hidden   bg-gradient-to-r from-orange-200 to-yellow-100 text-gray-900 inline-block font-bold">
+        <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0  bg-gradient-to-r from-neutral-700 to-slate-500 group-hover:h-full opacity-90">
+            
+              
+        </span>
+        <span class="relative group-hover:text-white"> ভাড়া করুন </span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-[2px] top-[30%] group-hover:text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg>
+        </a></div>   <!--button end  -->
+
+        <img class="w-20 absolute top-[15%] left-[20%] animate-spin" src="/images/no-image-230.png" alt="">
+
+  </div>
+  <div class="sm:text-slate-200 sm:text-[20px]  sm:flex  sm:justify-normal sm:items-center sm:gap-3 sm:rotate-90 sm:absolute sm:bottom-[40%] sm:right-[8%] hidden">
+    <p class="font-bold">আমাদের অনুসরণ করুন---</p>
+    <i class="fa-brands fa-facebook hover:text-[#F7A400] cursor-pointer"></i>
+    <i class="fa-brands fa-twitter hover:text-[#F7A400] cursor-pointer"></i>
+    <i class="fa-brands fa-instagram hover:text-[#F7A400] cursor-pointer"></i>
+    <i class="fa-brands fa-pinterest hover:text-[#F7A400] cursor-pointer"></i>
+    <i class="fa-brands fa-linkedin-in hover:text-[#F7A400] cursor-pointer"></i>
+    
+</div>
+</section>
+
+    <!-- header End -->
+
+    <!-- Banner Start -->
+
+    <section class="container mx-auto py-20">
+
+        <div class="flex items-center justify-center gap-x-8">
+            
+            <img class="w-28" src="/images/banner-1.jpg" alt="">
+            <img class="w-24" src="/images/banner-2.jpg" alt="">
+            <img class="w-28" src="/images/banner-3.jpg" alt="">
+            <img class="w-28" src="/images/banner-4.jpg" alt="">
+            <img class="w-28" src="/images/banner-5.jpg" alt="">
+            <img class="w-40" src="/images/banner-6.jpg" alt="">
+        </div>
+
+    </section>
+
+
+
+    <!-- Banner End -->
+
+    
+
+    <!-- About Us Start -->
+
+    <section class="container mx-auto  p-2 rounded-lg">
+        <div class="grid grid-cols-3 p-2 gap-x-3">
+            <div>
+                <h1 class="text-4xl font-semibold text-gray-950 py-7">আমাদের সম্পর্কে</h1>
+                <p class="text-lg py-5">গাড়ি ভাডা.কম-এ স্বাগতম, নির্ভরযোগ্য, সুবিধাজনক এবং সাশ্রয়ী মূল্যের গাড়ি ভাড়ার জন্য আপনার বিশ্বস্ত অংশীদার।<br> আপনি সপ্তাহান্তে ভ্রমণের পরিকল্পনা করছেন, ব্যবসায়িক ভ্রমণের পরিকল্পনা করছেন বা দৈনন্দিন ব্যবহারের জন্য কেবল একটি গাড়ির <br> প্রয়োজন, আমরা আপনাকে কভার করেছি। আমাদের বৈচিত্র্যময় বহরে কমপ্যাক্ট গাড়ি থেকে শুরু করে বিলাসবহুল SUV <br> পর্যন্ত সবকিছুই রয়েছে, যা নিশ্চিত করে যে আপনি আপনার প্রয়োজনের জন্য নিখুঁত গাড়ি খুঁজে পেতে পারেন।
+                    গাড়ি ভাডা.কম-এ, আমরা উচ্চ-মানের পরিষেবা এবং গ্রাহক সন্তুষ্টি দিতে প্রতিশ্রুতিবদ্ধ। </p>
+
+                    <article class="text-lg py-5">আমাদের টিম আপনাকে সহায়তা করার জন্য 24/7 উপলব্ধ, তা সঠিক যানবাহন চয়ন করতে বা আপনার ভাড়ার সময়কালে সহায়তা প্রদান করতে পারে। দেশব্যাপী অবস্থান এবং একটি বহরের সাথে যা ক্রমাগত সর্বশেষ মডেলগুলির সাথে আপডেট হয়, একটি গাড়ি ভাড়া করা সহজ ছিল না।আমাদের টিম আপনাকে সহায়তা করার জন্য 24/7 উপলব্ধ, তা সঠিক যানবাহন চয়ন করতে বা আপনার ভাড়ার সময়কালে সহায়তা প্রদান করতে পারে। দেশব্যাপী অবস্থান এবং একটি বহরের সাথে যা ক্রমাগত সর্বশেষ মডেলগুলির সাথে আপডেট হয় 
+                        গাড়ি ভাডা.কম নির্বাচন করার জন্য আপনাকে ধন্যবাদ. আসুন আমরা আপনাকে আত্মবিশ্বাস এবং শৈলীর সাথে রাস্তায় আঘাত করতে সহায়তা করি!
+                    </article>
+
+            </div>
+
+            <div>
+                <img class="pt-32 pl-6 rounded-lg" src="/images/about-1.jpg" alt="">
+            </div>
+
+            <div class="">
+                <div class="bg-black flex items-center justify-center px-4 py-8 w-3/4 rounded-xl mt-32 ml-6 cursor-pointer hover:bg-gray-900 ">
+                    <p class="text-white text-lg font-semibold">+১০ বছরের <br> অভিজ্ঞতা  </p>
+                    
+                </div>
+                <img class="pt-6" src="/images/about-2.jpg" alt="">
+                <img class="pt-6 pl-4" src="/images/header.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- About Us End -->
+
+    <!-- Our Services Start -->
+
+        <section class="container mx-auto py-12 bg-black rounded-lg relative">
+            <h1 class="text-[#F7A400] pt-8 pl-6 text-lg font-semibold ">আমাদের সেবা সমূহ </h1>
+            <div class="flex items-center justify-between p-5">
+                <p class="text-[#8f91c5]">আপনার গাড়ি ভাড়ার প্রয়োজনের জন্য <br> আমাদের প্রাথমিক পরিষেবা</p>
+                <p class="text-[#8f91c5]">আমরা শীর্ষস্থানীয় সমাধান প্রদানে গর্বিত! আমাদের <br> প্রিমিয়ার পরিষেবাগুলি  একটি নির্বিঘ্ন এবং সহজ গাড়ি ভাড়ার <br> অভিজ্ঞতা নিশ্চিত  করে৷ আপনার পছন্দ অনুসারে গাড়ি অফার করছে</p>
+            </div>
+            <img class="absolute top-[1%] right-[40%]" src="/images/Lightning.gif" alt="">
+
+            <div class="grid grid-cols-3 pt-10 gap-x-4 p-4">
+
+                <div class="bg-gray-800 rounded-md  p-7 shadow-xl">
+                   
+                        <i class="fa-solid fa-car text-white text-2xl  bg-gray-600 rounded-full  p-5 border-gray-400 ring-4 hover:scale-110 cursor-pointer duration-200"></i>
+                        <h1 class="text-white text-lg font-semibold pt-8 hover:text-[#F7A400] cursor-pointer">ভালো-রক্ষণাবেক্ষণ গাড়ি</h1>
+                        <p class="pt-4 text-white ">আমাদের ভাড়া গাড়িগুলি আপনার নিরাপত্তা এবং আরামের <br> জন্য যত্ন সহকারে রক্ষণাবেক্ষণ করা হয় জেনে  মানসিক <br>শান্তির সাথে  গাড়ি চালান। প্রতিটি যাত্রায় নির্ভরযোগ্যতা <br> এবং মানের অভিজ্ঞতা!</p>
+                    
+
+                </div>
+
+                <div class="bg-gray-800 rounded-md  p-7 shadow-xl ">
+                   
+                    <i class="fa-solid fa-shield-heart text-white text-2xl  bg-gray-600 rounded-full  p-5 border-gray-400 ring-4 hover:scale-110 cursor-pointer duration-200"></i>
+                    
+                    <h1 class="text-white text-lg font-semibold pt-8 hover:text-[#F7A400] cursor-pointer">নিরাপদ-অর্থপ্রদান</h1>
+                    <p class="pt-4 text-white ">আমাদের গাড়ি ভাড়ার সাইটে নিরাপদ, এনক্রিপ্ট <br>করা অর্থপ্রদানের বিকল্পগুলির সাথে মানসিক শান্তি উপভোগ করুন৷ <br> আপনার নিরাপত্তা এবং গোপনীয়তা আমাদের শীর্ষ অগ্রাধিকার.</p>
+                
+
+            </div>
+
+            <div class="bg-gray-800 rounded-md  p-7 shadow-xl ">
+                   
+                <i class="fa-solid fa-phone-volume text-white text-2xl  bg-gray-600 rounded-full  p-5 border-gray-400 ring-4 hover:scale-110 cursor-pointer duration-200"></i>
+                
+                <h1 class="text-white text-lg font-semibold pt-8 hover:text-[#F7A400] cursor-pointer">২৪/৭- সাপোর্ট </h1>
+                <p class="pt-4 text-white ">আমাদের ২৪/৭ গ্রাহক সহায়তার সাথে মানসিক শান্তি উপভোগ করুন, আপনার সমস্ত গাড়ি ভাড়ার প্রয়োজনে সহায়তা করার জন্য যে কোনো সময় উপলব্ধ। আত্মবিশ্বাসের সাথে ড্রাইভ করুন, সাহায্য জানা মাত্র একটি কল দূরে!</p>
+            
+
+        </div>
+
+            </div>
+
+        </section>
+
+     <!-- Our Services End-->
+
+     <!-- Best Offer Start -->
+      <section class="bg-gradient-to-r from-sky-800  to-emerald-900 mt-20">
+        <div class="container mx-auto ">
+            <div class="flex items-center justify-between">
+                <div class="pt-8 pl-36">
+                    <h1 class="text-amber-500 text-4xl font-bold pt-8">বেস্ট অফার </h1>
+                    <h2 class="text-amber-500 text-xl font-semibold pt-5">সুপার জিপ</h2>
+                    <h3 class="text-amber-500 text-xl font-semibold pt-5">১০,০০০ টাকা/সারাদিন </h3>
+                     <!--button start  -->
+    <div class="flex items-center justify-center  pt-8  mb-8">   <a href="#_" class="px-10 py-3 items-center relative rounded group overflow-hidden   bg-gradient-to-r from-orange-200 to-yellow-100 text-gray-900 inline-block font-bold">
+        <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0  bg-gradient-to-r from-neutral-700 to-slate-500 group-hover:h-full opacity-90">
+            
+              
+        </span>
+        <span class="relative group-hover:text-white"> ভাড়া করুন </span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-[2px] top-[30%] group-hover:text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg>
+        </a></div>   <!--button end  -->
+                </div>
+                <img class="pt-9 pr-28" src="/images/header.png" alt="">
+
+            </div>
+
+        </div>
+        
+      </section>
+
+     <!-- Best Offer End -->
+
+
+     <!-- Our services Start -->
+
+     <section class="container mx-auto mt-14 p-4">
+
+        <p class="text-[#F7A400] text-4xl font-semibold text-center">আমাদের সাভিস সমূহ</p>
+
+        <div class="grid grid-cols-3 mt-10 p-4 gap-x-6 gap-y-6">
+            <div class="bg-slate-50 rounded-lg shadow-md hover:scale-105 duration-300">
+                <img class="rounded-md" src="/images/pri-3.jpg" alt="">
+                <div class="flex items-center justify-around pt-5 ">
+                    <h1 class="text-gray-950 text-xl font-bold cursor-pointer hover:text-[#F7A400]">প্রাইভেট কার</h1>
+                    <div class="flex items-center justify-center gap-x-2">
+                        <p class="text-gray-950 text-lg font-semibold">৪.৮</p>
+                        <i class="fa-solid fa-star text-[#F7A400] text-lg"></i>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="flex pl-14 items-center gap-x-5 py-4">
+                    <i class="fa-solid fa-location-dot text-slate-700 text-lg"></i>
+                    <p class="text-lg text-gray-950">সমগ্র বাংলাদেশ </p>
+                </div>
+                <div class="flex pl-12 py-4">
+                <button class="text-white bg-[#F7A400] px-5 py-3 rounded-md hover:bg-[#14176C] ">এখনি বুকিং দেন</button>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 rounded-lg shadow-md hover:scale-105 duration-300">
+                <img class="rounded-md " src="/images/baike.jpg" alt="">
+                <div class="flex items-center justify-around pt-5 ">
+                    <h1 class="text-gray-950 text-xl font-bold cursor-pointer hover:text-[#F7A400]">রাইড শেয়ার</h1>
+                    <div class="flex items-center justify-center gap-x-2">
+                        <p class="text-gray-950 text-lg font-semibold">৪.৮</p>
+                        <i class="fa-solid fa-star text-[#F7A400] text-lg"></i>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="flex pl-14 items-center gap-x-5 py-4">
+                    <i class="fa-solid fa-location-dot text-slate-700 text-lg"></i>
+                    <p class="text-lg text-gray-950">সমগ্র বাংলাদেশ </p>
+                </div>
+                <div class="flex pl-12 py-4">
+                <button class="text-white bg-[#F7A400] px-5 py-3 rounded-md hover:bg-[#14176C] ">এখনি বুকিং দেন</button>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 rounded-lg shadow-md hover:scale-105 duration-300">
+                <img class="rounded-md " src="/images/jeep.jpg" alt="">
+                <div class="flex items-center justify-around pt-5 ">
+                    <h1 class="text-gray-950 text-xl font-bold cursor-pointer hover:text-[#F7A400]">জিপ ভাড়া</h1>
+                    <div class="flex items-center justify-center gap-x-2">
+                        <p class="text-gray-950 text-lg font-semibold">৪.৯</p>
+                        <i class="fa-solid fa-star text-[#F7A400] text-lg"></i>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="flex pl-14 items-center gap-x-5 py-4">
+                    <i class="fa-solid fa-location-dot text-slate-700 text-lg"></i>
+                    <p class="text-lg text-gray-950">সমগ্র বাংলাদেশ </p>
+                </div>
+                <div class="flex pl-12 py-4">
+                <button class="text-white bg-[#F7A400] px-5 py-3 rounded-md hover:bg-[#14176C] ">এখনি বুকিং দেন</button>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 rounded-lg shadow-md hover:scale-105 duration-300">
+                <img class="rounded-md " src="/images/bus.jpg" alt="">
+                <div class="flex items-center justify-around pt-5 ">
+                    <h1 class="text-gray-950 text-xl font-bold cursor-pointer hover:text-[#F7A400]">বাস ভাড়া</h1>
+                    <div class="flex items-center justify-center gap-x-2">
+                        <p class="text-gray-950 text-lg font-semibold">৪.৯</p>
+                        <i class="fa-solid fa-star text-[#F7A400] text-lg"></i>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="flex pl-14 items-center gap-x-5 py-4">
+                    <i class="fa-solid fa-location-dot text-slate-700 text-lg"></i>
+                    <p class="text-lg text-gray-950">সমগ্র বাংলাদেশ </p>
+                </div>
+                <div class="flex pl-12 py-4">
+                <button class="text-white bg-[#F7A400] px-5 py-3 rounded-md hover:bg-[#14176C] ">এখনি বুকিং দেন</button>
+                </div>
+            </div>
+
+
+            <div class="bg-slate-50 rounded-lg shadow-md hover:scale-105 duration-300">
+                <img class="rounded-md " src="/images/pickup.jpg" alt="">
+                <div class="flex items-center justify-around pt-5 ">
+                    <h1 class="text-gray-950 text-xl font-bold cursor-pointer hover:text-[#F7A400]">ট্রাক ভাড়া</h1>
+                    <div class="flex items-center justify-center gap-x-2">
+                        <p class="text-gray-950 text-lg font-semibold">৪.৮</p>
+                        <i class="fa-solid fa-star text-[#F7A400] text-lg"></i>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="flex pl-14 items-center gap-x-5 py-4">
+                    <i class="fa-solid fa-location-dot text-slate-700 text-lg"></i>
+                    <p class="text-lg text-gray-950">সমগ্র বাংলাদেশ </p>
+                </div>
+                <div class="flex pl-12 py-4">
+                <button class="text-white bg-[#F7A400] px-5 py-3 rounded-md hover:bg-[#14176C] ">এখনি বুকিং দেন</button>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 rounded-lg shadow-md hover:scale-105 duration-300">
+                <img class="rounded-md " src="/images/pickup.jpg" alt="">
+                <div class="flex items-center justify-around pt-5 ">
+                    <h1 class="text-gray-950 text-xl font-bold cursor-pointer hover:text-[#F7A400]">পিকআপ ভাড়া</h1>
+                    <div class="flex items-center justify-center gap-x-2">
+                        <p class="text-gray-950 text-lg font-semibold">৪.৯</p>
+                        <i class="fa-solid fa-star text-[#F7A400] text-lg"></i>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="flex pl-14 items-center gap-x-5 py-4">
+                    <i class="fa-solid fa-location-dot text-slate-700 text-lg"></i>
+                    <p class="text-lg text-gray-950">সমগ্র বাংলাদেশ </p>
+                </div>
+                <div class="flex pl-12 py-4">
+                <button class="text-white bg-[#F7A400] px-5 py-3 rounded-md hover:bg-[#14176C] ">এখনি বুকিং দেন</button>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 rounded-lg shadow-md hover:scale-105 duration-300">
+                <img class="rounded-md " src="/images/about-1.jpg" alt="">
+                <div class="flex items-center justify-around pt-5 ">
+                    <h1 class="text-gray-950 text-xl font-bold cursor-pointer hover:text-[#F7A400]">ট্যাক্সি ভাড়া</h1>
+                    <div class="flex items-center justify-center gap-x-2">
+                        <p class="text-gray-950 text-lg font-semibold">৪.৯</p>
+                        <i class="fa-solid fa-star text-[#F7A400] text-lg"></i>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="flex pl-14 items-center gap-x-5 py-4">
+                    <i class="fa-solid fa-location-dot text-slate-700 text-lg"></i>
+                    <p class="text-lg text-gray-950">সমগ্র বাংলাদেশ </p>
+                </div>
+                <div class="flex pl-12 py-4">
+                <button class="text-white bg-[#F7A400] px-5 py-3 rounded-md hover:bg-[#14176C] ">এখনি বুকিং দেন</button>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 rounded-lg shadow-md hover:scale-105 duration-300">
+                <img class="rounded-md " src="/images/ambu-4.jpg" alt="">
+                <div class="flex items-center justify-around pt-5 ">
+                    <h1 class="text-gray-950 text-xl font-bold cursor-pointer hover:text-[#F7A400]">এম্বুলেন্স সাভিস</h1>
+                    <div class="flex items-center justify-center gap-x-2">
+                        <p class="text-gray-950 text-lg font-semibold">৪.৯</p>
+                        <i class="fa-solid fa-star text-[#F7A400] text-lg"></i>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="flex pl-14 items-center gap-x-5 py-4">
+                    <i class="fa-solid fa-location-dot text-slate-700 text-lg"></i>
+                    <p class="text-lg text-gray-950">সমগ্র বাংলাদেশ </p>
+                </div>
+                <div class="flex pl-12 py-4">
+                <button class="text-white bg-[#F7A400] px-5 py-3 rounded-md hover:bg-[#14176C] ">এখনি বুকিং দেন</button>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 rounded-lg shadow-md hover:scale-105 duration-300">
+                <img class="rounded-md " src="/images/hay-2.jpg" alt="">
+                <div class="flex items-center justify-around pt-5 ">
+                    <h1 class="text-gray-950 text-xl font-bold cursor-pointer hover:text-[#F7A400]">হাইস ভাড়া</h1>
+                    <div class="flex items-center justify-center gap-x-2">
+                        <p class="text-gray-950 text-lg font-semibold">৪.৯</p>
+                        <i class="fa-solid fa-star text-[#F7A400] text-lg"></i>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="flex pl-14 items-center gap-x-5 py-4">
+                    <i class="fa-solid fa-location-dot text-slate-700 text-lg"></i>
+                    <p class="text-lg text-gray-950">সমগ্র বাংলাদেশ </p>
+                </div>
+                <div class="flex pl-12 py-4">
+                <button class="text-white bg-[#F7A400] px-5 py-3 rounded-md hover:bg-[#14176C] ">এখনি বুকিং দেন</button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+     </section>
+
+      <!-- Our services  End-->
+
+
+      <!-- Our Packges Start-->
+
+      <section class="container mx-auto mt-10">
+        <div class="bg-black rounded-lg">
+            
+            <h1 class="text-4xl text-white font-bold text-center pt-14">আমাদের প্যাকেজ</h1>
+            <div class="flex items-center justify-center">
+            <img class="w-44" src="/images/gif.gif" alt="">
+        </div>
+            <div class="flex p-4 items-center justify-around flex-col">
+                <p class="text-white pt-10 text-lg bg-gray-900 p-6 rounded-md shadow-md">গাড়ি ভাড়া.কম এ, আমরা আপনার প্রয়োজন মেটাতে ডিজাইন করা নমনীয় প্যাকেজ অফার করি।  ছোট ভ্রমণের <br>জন্য আমাদের দৈনিক ভাড়া, বর্ধিত থাকার জন্য বা দীর্ঘমেয়াদী সুবিধার জন্য মাসিক পরিকল্পনা থেকে বেছে নিন। <br> এছাড়াও আমাদের কাছে বিশেষ ডিল* রয়েছে যা সপ্তাহান্তে ছুটি এবং ছুটির রোমাঞ্চের জন্য একচেটিয়া <br> ডিসকাউন্ট অফার করে।  আপনার ভ্রমণ পরিকল্পনা যাই হোক না কেন, আমাদের প্রতিযোগিতামূলক <br> রেট এবং যানবাহনের বিস্তৃত নির্বাচন  নিশ্চিত করে যে আপনি একটি মসৃণ এবং উপভোগ্য যাত্রা পাবেন।</p>
+                <div class="">
+                    <div class="collapse bg-sky-900 mt-6">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium text-center text-white">ঘন্টা হিসেবে</div>
+                        <div class="collapse-content">
+                          <p class="text-white">আমাদের কাছে সকল ধরনের গাড়ী ঘন্টা হিসেবে ভাড়া করতে পারবেন। </p>
+                        </div>
+                      </div>
+
+
+                      <div class="collapse bg-sky-900 mt-4">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium text-center text-white">১ ডাউন</div>
+                        <div class="collapse-content">
+                          <p class="text-white">আমাদের কাছে সকল ধরনের গাড়ী ১ ডাউন হিসেবে ভাড়া করতে পারবেন। </p>
+                        </div>
+                      </div>
+
+                      <div class="collapse bg-sky-900 mt-4">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium text-center text-white">আপ-ডাউন </div>
+                        <div class="collapse-content">
+                          <p class="text-white">আমাদের কাছে সকল ধরনের গাড়ী আপ-ডাউন  হিসেবে ভাড়া করতে পারবেন। </p>
+                        </div>
+                      </div>
+
+                      <div class="collapse bg-sky-900 mt-4">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium text-center text-white">সারাদিন </div>
+                        <div class="collapse-content">
+                          <p class="text-white">আমাদের কাছে সকল ধরনের গাড়ী সারাদিন হিসেবে ভাড়া করতে পারবেন। </p>
+                        </div>
+                      </div>
+
+                      <div class="collapse bg-sky-900 mt-4">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium text-center text-white">রিজার্ভ সাভিস </div>
+                        <div class="collapse-content">
+                          <p class="text-white">আমাদের কাছে সকল ধরনের গাড়ী রিজার্ভ সাভিস হিসেবে ভাড়া করতে পারবেন। </p>
+                        </div>
+                      </div>
+
+                      <div class="collapse bg-sky-900 mt-4">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium text-center text-white">ছুটিরদিন স্পেশাল  </div>
+                        <div class="collapse-content">
+                          <p class="text-white">আপনাদের ছুটিরদিনটাকে স্পেশাল করতে আমাদের কাছে রয়েছে বিশেষ অফার। </p>
+                        </div>
+                      </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+      </section>
+
+      <!-- Our Packges End-->
+
+       <!-- Our Mobile Apps Start-->
+
+       <section class="container mx-auto">
+
+        <h1 class="text-4xl font-bold text-center py-14 text-[#14176C]">আমাদের মোবাইল এপস</h1>
+
+        <div class="flex items-center justify-center bg-gray-700 p-3 rounded-lg gap-x-2 cursor-pointer">
+
+        <img class="rounded-md" src="/images/mobile-1.jpg" alt="">
+
+        <img class="rounded-md" src="/images/mobile-3.jpg" alt="">
+    </div>
+
+    <div class="flex items-center justify-center pt-4 gap-x-1">
+        <a href="#">
+            <img class="w-44" src="/images/play.png" alt="">
+        </a>
+
+        <a href="#">
+            <img class="w-44" src="/images/store.jpg" alt="">
+        </a>
+    </div>
+
+       </section>
+
+       <!-- Our Mobile Apps End-->
+
+       <!--Testimonial start-->
+
+       <section class="w-full h-auto bg-[#000235] mt-20">
+
+        <div class="text-white text-center py-10">
+            <h1 class="text-[#abd9d9] text-lg font-bold">আমাদের টেস্টোমনিয়াল</h1>
+            <h2 class="text-4xl w-96 mx-auto leading-normal font-bold mb-12 pt-4">আমাদের কাস্টমার গন কি বলে </h2>
+            <div class="flex max-w-5xl mx-auto gap-8 group">
+                <div class="bg-white/10 group-hover:blur-sm hover:!blur-none  cursor-pointer duration-500 group-hover:scale-[0.85] hover:!scale-100   p-8 rounded-xl mix-blend-luminosity">
+                    <img class="h-20 mx-auto rounded-full" src="/images/team_img02.jpg" alt="">
+                    <h4 class="text-xl font-bold pt-4">আমেনা খাতুন </h4>
+                    <p class="text-sm lea my-3 font-light opacity-50">অত্যন্ত সুপারিশ! তাদের দল অবিশ্বাস্যভাবে সহায়ক ছিল এবং নিশ্চিত করেছিল <br> যে আমার রোড ট্রিপের জন্য আমার কাছে নিখুঁত গাড়ি আছে। দারুণ অভিজ্ঞতা!</p>
+                    <div class="flex items-center justify-around opacity-80">
+                        <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                        <p class="  font-bold">৪.৯/৫</p>
+                    </div>
+                    <button class="bg-[#7e7ee3] py-2.5 px-8 rounded-full mt-5">আরও পড়ুন </button>
+
+                </div>
+
+                <div class="bg-white/10 group-hover:blur-sm hover:!blur-none cursor-pointer duration-500 group-hover:scale-[0.85] hover:!scale-100  p-8 rounded-xl mix-blend-luminosity">
+                    <img class="h-20 mx-auto rounded-full" src="/images/team_img03.jpg" alt="">
+                    <h4 class="text-xl font-bold pt-4">করিম শেখ </h4>
+                    <p class="text-sm lea my-3 font-light opacity-50">চমত্কার সেবা! গাড়ী পরিষ্কার, নির্ভরযোগ্য, এবং ভাড়া প্রক্রিয়া<br> বিরামহীন ছিল.  এখান থেকে অবশ্যই আবার ভাড়া নেবে!</p>
+                    <div class="flex items-center justify-around opacity-80">
+                        <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                        <p class="  font-bold">৪.৮/৫</p>
+                    </div>
+                    <button class="bg-[#7e7ee3] py-2.5 px-8 rounded-full mt-5">আরও পড়ুন </button>
+
+                </div>
+
+                <div class="bg-white/10 group-hover:blur-sm hover:!blur-none duration-500 group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity">
+                    <img class="h-20 mx-auto rounded-full" src="/images/team_img04.jpg" alt="">
+                    <h4 class="text-xl font-bold pt-4">প্রত্যাশা মদক </h4>
+                    <p class="text-sm lea my-3 font-light opacity-50">চমৎকার হার এবং সেবা. আমার শর্ট নোটিশে একটি গাড়ি দরকার ছিল, <br> এবং তারা এটি অনায়াসে ঘটিয়েছে। </p>
+                    <div class="flex items-center justify-around opacity-80">
+                        <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                        <p class="  font-bold">৪.৯/৫</p>
+                    </div>
+                    <button class="bg-[#7e7ee3] py-2.5 px-8 rounded-full mt-5">আরও পড়ুন </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+       </section>
+
+
+
+       <!--Testimonial End->
+
+    
+</body>
+</html>
