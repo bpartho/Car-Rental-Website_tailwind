@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #menu-toggle:checked + #menu {
+          display: block;
+        }
+        
+      </style>
+</head>
+<body class="font-abc">
+
+     <!-- header Start -->
+     <section class="bg-[#14176C]  font-[16px]  w-full md:p-3  items-start justify-around hidden sm:flex ">
+
+        <div class="flex items-center justify-normal gap-4">
+            <div class="flex items-center justify-center gap-2">
+                <i class="fa-solid fa-phone-volume text-gray-500"></i>
+            <a class="text-white" href="#">
+                +৮৮-০১৭৫৪৪৬৯..</a>
+            </div>
+    
+    
+            <div class="flex items-center justify-center gap-2">
+                <i class="fa-solid fa-location-dot text-gray-500"></i>
+                    <p  class="text-white">ময়মনসিংহ, বাংলাদেশ </p>
+            </div>
+    
+        </div>
+    
+        <div class="flex items-center justify-normal gap-5">
+            <div class="flex items-center justify-center gap-2">
+                <i class="fa-regular fa-envelope text-gray-500"></i>
+            <a  class="text-white" href="#">info@rent.com</a>
+            </div>
+    
+            <div class="flex items-center justify-center gap-2">
+                <i class="fa-regular fa-clock text-gray-500"></i>
+                <p  class="text-white">রবি-বৃহস্পতি: 10:00am - 09:00pm</p>
+            </div>
+        </div>
+    
+        
+    
+    </section>
+
+
+
+
+    <section class="bg-slate-300 shadow-md  w-full h-auto p-4 rounded-lg">
+        <nav class="container mx-auto lg:px-16 px-6 flex flex-wrap items-center lg:py-0 py-2">
+       <div class="flex-1 flex justify-between items-center">
+         <a href="/" class="flex text-lg font-semibold ">
+           <img
+             src="/images/logo-3.svg"
+             width="50"
+             height="50"
+             class="p-2"
+             alt="Rz Codes Logo"
+           />
+           <div class="mt-3 text-gray-900">গাড়ী ভাড়া.কম</div>
+         </a>
+       </div>
+       <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+         <svg
+           class="fill-current text-gray-900"
+           xmlns="http://www.w3.org/2000/svg"
+           width="20"
+           height="20"
+           viewBox="0 0 20 20"
+         >
+           <title>menu</title>
+           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+         </svg>
+       </label>
+       <input class="hidden" type="checkbox" id="menu-toggle" />
+       <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+         <nav>
+           <ul class="text-xl text-center items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex  lg:pt-0">
+             <li class="py-2 lg:py-0 ">
+               <a
+                 class="text-gray-900 hover:pb-4 hover:border-b-4 hover:border-[#14176C] text-lg duration-200 hover:text-[#F7A400] "
+                 href="index.html"
+               >
+               হোম
+               </a>
+             </li>
+             <li class="py-2 lg:py-0 ">
+               <a
+                 class="text-gray-900 hover:pb-4 hover:border-b-4  hover:border-[#14176C] text-lg duration-200 hover:text-[#F7A400]  "
+                 href="#"
+               >
+               আমাদের সম্পর্কে
+               </a>
+             </li>
+             <li class="py-2 lg:py-0 ">
+             
+               <div class=" flex  -200 ">
+                <div class="group relative cursor-pointer py-2">
+            
+                    <div class="flex items-center justify-between space-x-3  px-4">
+                        <a href="#" class="menu-hover text-gray-900 font-medium lg:mx-4 hover:text-[#F7A400] text-lg  " onClick="">
+                            সেবা সমূহ
+                        </a>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="text-gray-900" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-6 w-6 text-white hover:text-[#F7A400]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span>
+                    </div>
+            
+                    <div
+                        class="invisible absolute z-50 flex rounded-md w-full flex-col bg-gradient-to-r from-sky-700 to-cyan-800  py-1 px-7 text-gray-800 shadow-xl group-hover:visible">
+            
+                        <a href="#" class="my-2 block border-b  border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
+                            ভাড়া দিন
+                        </a>
+            
+                        <a href="#"  class="my-2 block border-b border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
+                            ভাড়া করুন 
+                        </a>
+            
+                    
+                    </div>
+                </div>
+            </div>
+                
+              </li>
+             <li class="py-2 lg:py-0 ">
+               <a
+                 class="text-gray-900 hover:pb-4 hover:border-b-4 hover:border-[#14176C] text-lg duration-200 hover:text-[#F7A400] "
+                 href="#"
+               >
+               ব্লগ
+               </a>
+             </li>
+             <li class="py-2 lg:py-0 ">
+               <a
+                 class="text-gray-900 hover:pb-4 hover:border-b-4 hover:border-[#14176C] text-lg duration-200  hover:text-[#F7A400] "
+                 href="#"
+               >
+               যোগাযোগ
+               </a>
+             </li>
+              
+             <a href="#" class="bg-black p-4 flex items-center justify-center gap-x-3 cursor-pointer rounded-2xl hover:bg-gray-900 mt-2">
+               <p class="text-white font-semibold">মোবাইল অ্যাপ</p>
+               <i class="fa-solid fa-square-arrow-up-right text-gray-700"></i>
+             </a>
+             <a href="#" class="bg-black text-white p-4 flex items-center justify-center gap-x-2 rounded-xl mt-2 hover:bg-gray-900">
+               <p class="text-white text-lg">লগইন</p>
+               <i class="fa-solid fa-user"></i>
+             </a>
+           </ul>
+         </nav>
+       </div>
+     </nav>
+     
+   </section>  
+
+    <!-- header End -->
+     <!-- Hero section start -->
+     <section class="w-full h-[500px] bg-center bg-cover bg-no-repeat" style="background-image: url(/images/about-bg.jpg);">
+        <div class="w-full h-[500px] bg-center bg-cover bg-no-repeat bg-slate-700 bg-opacity-80">
+            <div class="flex items-center justify-center gap-x-10">
+                <div class=" p-3 ">
+                    <h1 class="text-white text-6xl font-bold pt-28 pb-10">আপনার স্থানীয় গাড়ি ভাড়া <br> প্রদানকারী</h1>
+                    <a class="text-white p-5 bg-[#F7A400]  text-lg rounded-md hover:bg-[#14176C] duration-300 " href="#">আজ ভাড়া করুন</a>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center pt-12 gap-x-5">
+                        <i class="fa-solid fa-tag text-[#F7A400]  text-6xl rotate-90"></i>
+                        <div>
+                            <h1 class="text-white text-2xl font-bold py-3">২০% ছাড়</h1>
+                            <h2 class="text-white text-xl mb-7  ">আপনার প্রথম বুকিং এ</h2>
+                            <a class="text-gray-300 p-4 border bg-transparent rounded-md" href="#">পূনরায় ভাড়া করুন </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+     </section>
+      <!-- Hero section End -->
+
+      <!-- About start -->
+
+      <section class="container mx-auto pt-10">
+        <div class="grid grid-cols-2 p-5">
+            <div>
+            <h1 class="text-4xl font-semibold text-gray-700 py-7">আমাদের সম্পর্কে</h1>
+            <p class="text-xl text-gray-500 pt-5 ">গাড়ি ভাডা.কম-এ স্বাগতম, নির্ভরযোগ্য, সুবিধাজনক এবং সাশ্রয়ী মূল্যের <br> গাড়ি ভাড়ার জন্য  আপনার বিশ্বস্ত অংশীদার। আপনি সপ্তাহান্তে ভ্রমণের <br> পরিকল্পনা করছেন, ব্যবসায়িক ভ্রমণের পরিকল্পনা  করছেন বা দৈনন্দিন  ব্যবহারের<br>  জন্য কেবল একটি গাড়ির প্রয়োজন, আমরা আপনাকে কভার করেছি।</p>
+        </div>
+        <img src="/images/about-images.png" alt="">
+        <div>
+            <h1 class="text-2xl text-gray-950">১০ বছরেরও বেশি সময় ধরে যানবাহন সরবরাহ করে থাকি </h1>
+            <p class="pt-6 text-lg text-gray-500"> আমাদের বৈচিত্র্যময় বহরে কমপ্যাক্ট গাড়ি থেকে শুরু করে বিলাসবহুল SUV  পর্যন্ত সবকিছুই রয়েছে, <br> যা নিশ্চিত করে যে আপনি আপনার প্রয়োজনের জন্য নিখুঁত গাড়ি খুঁজে পেতে পারেন। <br>
+                গাড়ি ভাডা.কম-এ, আমরা উচ্চ-মানের পরিষেবা এবং গ্রাহক সন্তুষ্টি দিতে প্রতিশ্রুতিবদ্ধ।</p>
+        </div>
+        <p class="text-lg text-gray-500">আমাদের টিম আপনাকে সহায়তা করার জন্য ২৪/৭ উপলব্ধ, তা সঠিক যানবাহন চয়ন করতে বা আপনার ভাড়ার সময়কালে সহায়তা প্রদান করতে পারে। দেশব্যাপী অবস্থান এবং একটি বহরের সাথে যা ক্রমাগত সর্বশেষ মডেলগুলির সাথে আপডেট হয়, একটি গাড়ি ভাড়া করা সহজ ছিল না।আমাদের টিম আপনাকে সহায়তা করার জন্য ২৪/৭ উপলব্ধ, তা সঠিক যানবাহন চয়ন করতে বা আপনার ভাড়ার সময়কালে সহায়তা প্রদান করতে পারে।</p>
+        </div>
+      </section>
+
+
+
+      <!-- About End -->
+
+
+      <!-- Why Choose Us Start -->
+
+      <section class="w-full h-screen bg-center bg-cover mt-16 bg-no-repeat" style="background-image: url(/images/video.jpg);">
+        <div class="w-full h-screen bg-gray-800 bg-cover bg-opacity-85">
+            <div class=" container mx-auto">
+                <h1 class="text-white text-5xl text-center pt-28 font-bold">কেন আমাদের পছন্দ করবেন?</h1>
+                <div class="flex items-center justify-around ">
+                    <div class="p-4">
+                        <video controls width="600px" class=" rounded-md pt-36 cursor-pointer hover:opacity-50 mb-10"  src="/images/video.me.mp4" poster="/images/video.jpg"></video>
+                        <a href="#" class="text-white text-lg p-5 bg-[#F7A400] rounded-md">একটি গাড়ী রিজার্ভ করুন</a>
+                    </div>
+
+                    <div>
+                      <div class="flex items-center justify-center gap-x-4 p-4">
+                        <i class="fa-solid fa-check text-lg p-3 rounded-full text-center bg-[#F7A400] "></i>
+                        <p class="text-white text-xl ">ভালো-রক্ষণাবেক্ষণ গাড়ি</p>
+                      </div>
+                      <div class="flex items-center justify-center gap-x-4 p-4">
+                        <i class="fa-solid fa-check text-lg p-3 rounded-full text-center bg-[#F7A400] "></i>
+                        <p class="text-white text-xl ">নিরাপদ-অর্থপ্রদান</p>
+                      </div>
+                      <div class="flex items-center justify-center gap-x-4 p-4">
+                        <i class="fa-solid fa-check text-lg p-3 rounded-full text-center bg-[#F7A400] "></i>
+                        <p class="text-white text-xl ">২৪/৭- সাপোর্ট</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- Why Choose Us End -->
+
+
+         <!-- Contact us Start  -->
+
+         <section class="body-font relative bg-gray-900 text-gray-400 ">
+
+          <div class="container mx-auto px-5 py-24">
+            
+            <div class="mb-12 flex w-full flex-col text-center">
+              <h1 class="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">আমাদের সাথে যোগাযোগ করুন</h1>
+              <p class="mx-auto text-base leading-relaxed lg:w-2/3">আমাদের সাথে যোগাযোগ বিনা দ্বিধায়! আপনার একটি প্রশ্ন, প্রতিক্রিয়া, বা একটি সহযোগিতার প্রস্তাব থাকুক না কেন, আমরা আপনার কাছ থেকে শুনতে চাই।
+              </p>
+            </div>
+        
+            <div class="mx-auto md:w-2/3 lg:w-1/2">
+              <div class="-m-2 flex flex-wrap">
+        
+                <!-- form -->
+                <div class="w-1/2 p-2">
+                  <div class="relative">
+                    <input type="text" id="name" name="name" class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Name" />
+                    <label for="name" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">নাম</label>
+                  </div>
+                </div>
+                <div class="w-1/2 p-2">
+                  <div class="relative">
+                    <input type="email" id="email" name="email" class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Email" />
+                    <label for="email" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">ইমেইল </label>
+                  </div>
+                </div>
+                <div class="mt-4 w-full p-2">
+                  <div class="relative">
+                    <textarea id="message" name="message" class="peer h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-6 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Message"></textarea>
+                    <label for="message" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">মেসেজ</label>
+                  </div>
+                </div>
+                <div class="w-full p-2">
+                  <button   class="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none">মেসেজ পাঠান</button>
+                </div>
+        
+        
+               
+        
+          </div>
+          
+        </section>
+  
+        <!-- Get In Touch End -->
+
+
+        
+         <!--Top Footer Start-->
+
+     <section class="w-full h-full sm:h-auto pb-16 bg-right-top bg-no-repeat relative" style="background-image: url(/images/footer_shape02.png);">
+
+      <div class="container mx-auto ">
+
+          <div class="grid sm:grid-cols-4">
+
+              <div class="flex flex-col items-center justify-center pt-[120px] ">
+                  <div class="flex items-center justify-center gap-x-2">
+                  <a href="#">
+                  <img class="w-[40px]" src="/images/logo-3.svg" alt="">
+                  
+              </a>
+              <p class="text-[#191D88] font-semibold text-xl">গাড়ি_ভাড়া.কম</p>
+          </div>
+                  <p class="text-[#191D88] font-semibold pt-7 text-center">আমরা আপনাদের সেবায় ২৪ ঘন্টা  ৭দিন প্রস্তুত।<br>  আপনাদের আরামদায়ক যাত্রাই আমাদের উদ্দেশ্য .</p>
+                  <div class="flex gap-x-3 pt-7">
+                  <div class="w-10 h-10  bg-[#cfe2ff] rounded-sm flex items-center justify-center group hover:bg-[#191D88] cursor-pointer">
+                  <i class="fa-brands fa-facebook-f text-[#191D88] text-xl group-hover:text-white"></i>
+              </div>
+              <div class="w-10 h-10  bg-[#cfe2ff] rounded-sm flex items-center justify-center group hover:bg-[#191D88] cursor-pointer">
+                  <i class="fa-brands fa-twitter text-[#191D88] text-xl group-hover:text-white"></i>
+              </div>
+              <div class="w-10 h-10  bg-[#cfe2ff] rounded-sm flex items-center justify-center group hover:bg-[#191D88] cursor-pointer">
+                  <i class="fa-brands fa-instagram text-[#191D88] text-xl group-hover:text-white"></i>
+              </div>
+              <div  class="w-10 h-10  bg-[#cfe2ff] rounded-sm flex items-center justify-center group hover:bg-[#191D88] cursor-pointer">
+                  <i class="fa-brands fa-pinterest text-[#191D88] text-xl group-hover:text-white"></i>
+              </div>
+              <div  class="w-10 h-10  bg-[#cfe2ff] rounded-sm flex items-center justify-center group hover:bg-[#191D88] cursor-pointer">
+                  <i class="fa-brands fa-youtube text-[#191D88] text-xl group-hover:text-white"></i>
+              </div>
+          </div>
+              </div>
+
+              <div>
+                  
+                  
+                  <div class="flex flex-col items-center justify-center pt-[120px]">
+                      <p class="text-[#191D88] text-xl font-bold  ">আমাদের সম্পর্কে তথ্য</p>
+                      <div class="border-b-4 border-b-[#F7A400] w-10 h-3 rounded-sm ">
+
+                      </div>
+               
+          </div>
+              <div class="flex gap-x-3 items-center justify-center pt-4">
+              <i class="fa-solid fa-phone text-[#191D88] text-xl"></i>
+              <a class="text-[#191D88] text-xl hover:text-[#F7A400]" type="telephone" href="#">+৮৮-০১৭২৭২৬২২</a>
+          </div>
+
+          <div class="flex gap-x-3 items-center justify-center pt-4">
+              <i class="fa-regular fa-envelope text-[#191D88] text-xl"></i>
+              <a class="text-[#191D88] text-xl hover:text-[#F7A400]" href="#">info@bpartho</a>
+          </div>
+
+          <div class="flex gap-x-3 items-center justify-center pt-4 ">
+              <i class="fa-solid fa-location-dot text-[#191D88] text-xl"></i>
+              <p class="text-[#191D88] text-xl">সি কে ঘোষ রোড় <br> ময়মনসিংহ , <br> বাংলাদেশ .</p>
+          </div>
+
+              </div>
+
+              <div>
+
+                  <div class="flex flex-col items-center justify-center pt-[120px]">
+                      <p class="text-[#191D88] text-xl font-bold  ">টপ_লিংক </p>
+                      <div class="border-b-4 border-b-[#F7A400] w-10 h-3 rounded-sm ">
+
+                      </div>
+                </div>
+
+                <div class="flex flex-col p-4 items-center justify-center">
+                  <a class="p-2 px-4 text-[#191D88] hover:text-[#F7A400] font-semibold group" href="#">
+                      এটা কিভাবে কাজ করে
+                      <div class="bg-amber-500 h-[2px] w-0 group-hover:w-[100px] transition-all duration-500"></div>
+                  </a>
+                  <a class="p-2 px-4 text-[#191D88] font-semibold hover:text-[#F7A400] group" href="#">
+                      অ্যান্ড্রয়েড অ্যাপস
+                      <div class="bg-amber-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                  </a>
+                  <a class="p-2 px-4 text-[#191D88] font-semibold hover:text-[#F7A400]  group" href="#">
+                      টেস্টিমোনিয়াল
+                      <div class="bg-amber-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                  </a>
+
+
+                  
+
+                  <a class="p-2 px-4 text-[#191D88] font-semibold hover:text-[#F7A400] group" href="#">
+                      আমাদের প্যাকেজ সমূহ 
+                      <div class="bg-amber-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                  </a>
+
+
+              </div>
+                  
+
+              </div>
+
+              <div>
+                  <div class="flex flex-col items-center justify-center pt-[120px]">
+                      <p class="text-[#191D88] text-xl font-bold  ">ইনস্টাগ্রাম পোস্ট</p>
+                      <div class="border-b-4 border-b-[#F7A400] w-10 h-3 rounded-sm ">
+
+                      </div>
+                      <div class="grid grid-cols-3 pt-5 gap-4 ">
+                          <img class="w-[90px] h-[90px] rounded-md cursor-pointer" src="/images/about-1.jpg" alt="">
+                          <img class="w-[90px] h-[90px] rounded-md cursor-pointer"  src="/images/pri-2.jpg" alt="">
+                          <img class="w-[90px] h-[90px] rounded-md cursor-pointer" src="/images/bus.jpg" alt="">
+                          <img class="w-[90px] h-[90px] rounded-md cursor-pointer" src="/images/ambu-4.jpg" alt="">
+                          <img class="w-[90px] h-[90px] rounded-md cursor-pointer" src="/images/jeep.jpg" alt="">
+                          <img class="w-[90px] h-[90px] rounded-md cursor-pointer" src="/images/hay-2.jpg" alt="">
+                      </div>
+                </div>
+              </div>
+
+             
+         
+
+          </div>
+          <img class="w-[250px] absolute bottom-0 left-0" src="/images/footer_shape01.png" alt="">
+          <img  class=" absolute top-[18%] right-[4%]" src="/images/footer_shape03.png" alt="">
+
+      </div>
+
+   </section>
+
+   <!--Top Footer End-->
+
+    
+</body>
+</html>

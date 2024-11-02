@@ -6,8 +6,14 @@
     <title>Rent Car</title>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #menu-toggle:checked + #menu {
+          display: block;
+        }
+        
+      </style>
 </head>
-<body>
+<body class="font-abc">
     <!-- header Start -->
     <section class="bg-[#14176C]  font-[16px]  w-full md:p-3  items-start justify-around hidden sm:flex ">
 
@@ -42,132 +48,171 @@
     
     </section>
 
-    <section class="w-full h-[850px] bg-cover bg-center relative" style="background-image: url(/images/bg-1.jpg);">
-     
 
-<nav class="  ">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/images/logo-3.svg" class="h-8 hover:text-[#F7A400]" alt="" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white hover:text-[#F7A400]">গাড়ী ভাড়া.</span>
-      </a>
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default group">
-        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse ">
-          <li>
-            <a href="#" class="block py-2 px-3 text-white  text-lg hover:text-[#F7A400] " aria-current="page">হোম</a>
-          </li>
-          <li>
-             <a href="#" class="block py-2 px-3 text-white  text-lg hover:text-[#F7A400]">আমাদের সম্পর্কে</a>
 
-          </li>
-          <li>
-           <!-- <a href="#" class="block py-2 px-3 text-white  text-lg hover:text-[#F7A400]">সেবা সমূহ</a> --> 
-           <div class=" flex  -200 ">
-            <div class="group relative cursor-pointer py-2">
-        
-                <div class="flex items-center justify-between space-x-5  px-4">
-                    <a href="#" class="menu-hover text-white text-base font-medium lg:mx-4 hover:text-[#F7A400] " onClick="">
-                        সেবা সমূহ
-                    </a>
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6 text-white hover:text-[#F7A400]">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </span>
-                </div>
-        
-                <div
-                    class="invisible absolute z-50 flex rounded-md w-full flex-col bg-gradient-to-r from-zinc-500 to-slate-500  py-1 px-7 text-gray-800 shadow-xl group-hover:visible">
-        
-                    <a href="#" class="my-2 block border-b  border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
-                        Sunday
-                    </a>
-        
-                    <a href="#"  class="my-2 block border-b border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
-                        Monday
-                    </a>
-        
-                    <a href="#"  class="my-2 block border-b border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
-                        Tuesday
-                    </a>
-        
-                    <a href="#"  class="my-2 block border-b border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
-                        Wednesday
-                    </a>
-        
-                    <a  href="#"  class="my-2 block border-b border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
-                        Thursday
-                    </a>
-        
-                    <a href="#"  class="my-2 block border-b border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
-                        Friday
-                    </a>
-        
+
+    <section class="bg-slate-300 shadow-md  w-full h-screen rounded-lg">
+        <nav class="container mx-auto lg:px-16 px-6 flex flex-wrap items-center lg:py-0 py-2">
+       <div class="flex-1 flex justify-between items-center">
+         <a href="/" class="flex text-lg font-semibold ">
+           <img
+             src="/images/logo-3.svg"
+             width="50"
+             height="50"
+             class="p-2"
+             alt="Rz Codes Logo"
+           />
+           <div class="mt-3 text-gray-900">গাড়ী ভাড়া.কম</div>
+         </a>
+       </div>
+       <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+         <svg
+           class="fill-current text-gray-900"
+           xmlns="http://www.w3.org/2000/svg"
+           width="20"
+           height="20"
+           viewBox="0 0 20 20"
+         >
+           <title>menu</title>
+           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+         </svg>
+       </label>
+       <input class="hidden" type="checkbox" id="menu-toggle" />
+       <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+         <nav>
+           <ul class="text-xl text-center items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex  lg:pt-0">
+             <li class="py-2 lg:py-0 ">
+               <a
+                 class="text-gray-900 hover:pb-4 hover:border-b-4 hover:border-[#14176C] text-lg duration-200 hover:text-[#F7A400] "
+                 href="#"
+               >
+               হোম
+               </a>
+             </li>
+             <li class="py-2 lg:py-0 ">
+               <a
+                 class="text-gray-900 hover:pb-4 hover:border-b-4  hover:border-[#14176C] text-lg duration-200 hover:text-[#F7A400]  "
+                 href="about.html"
+               >
+               আমাদের সম্পর্কে
+               </a>
+             </li>
+             <li class="py-2 lg:py-0 ">
+             
+               <div class=" flex  -200 ">
+                <div class="group relative cursor-pointer py-2">
+            
+                    <div class="flex items-center justify-between space-x-3  px-4">
+                        <a href="#" class="menu-hover text-gray-900 font-medium lg:mx-4 hover:text-[#F7A400] text-lg  " onClick="">
+                            সেবা সমূহ
+                        </a>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="text-gray-900" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-6 w-6 text-white hover:text-[#F7A400]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span>
+                    </div>
+            
+                    <div
+                        class="invisible absolute z-50 flex rounded-md w-full flex-col bg-gradient-to-r from-sky-700 to-cyan-800  py-1 px-7 text-gray-800 shadow-xl group-hover:visible">
+            
+                        <a href="#" class="my-2 block border-b  border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
+                            ভাড়া দিন
+                        </a>
+            
+                        <a href="#"  class="my-2 block border-b border-gray-100 py-1 font-semibold text-white hover:text-[#F7A400] md:mx-2">
+                            ভাড়া করুন 
+                        </a>
+            
                     
-        
+                    </div>
                 </div>
             </div>
-        </div>
-            
-          </li>
-          <li>
-            <a href="#" class="block py-2 px-3 text-white  text-lg hover:text-[#F7A400]">ব্লগ</a>
-          </li>
-          <li>
-            <a href="#" class="block py-2 px-3 text-white text-lg hover:text-[#F7A400]">যোগাযোগ </a>
-          </li>
-          <div class="bg-black p-4 flex items-center justify-center gap-x-3 cursor-pointer rounded-2xl hover:bg-gray-900">
-            <p class="text-white font-semibold">মোবাইল অ্যাপ</p>
-            <i class="fa-solid fa-square-arrow-up-right text-white"></i>
-
-          </div>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container mx-auto ">
-    <p class="text-4xl font-semibold flex items-center justify-center pt-36 pl-10  text-white">বাংলাদেশের সবচেয়ে বৃহৎ <br> <br> গাড়ি ভাড়া সেবা</p>
-
-    <!--button start  -->
-    <div class="flex items-center justify-center  pt-28  mb-4">   <a href="#_" class="px-10 py-3 items-center relative rounded group overflow-hidden   bg-gradient-to-r from-orange-200 to-yellow-100 text-gray-900 inline-block font-bold">
-        <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0  bg-gradient-to-r from-neutral-700 to-slate-500 group-hover:h-full opacity-90">
-            
+                
+              </li>
+             <li class="py-2 lg:py-0 ">
+               <a
+                 class="text-gray-900 hover:pb-4 hover:border-b-4 hover:border-[#14176C] text-lg duration-200 hover:text-[#F7A400] "
+                 href="#"
+               >
+               ব্লগ
+               </a>
+             </li>
+             <li class="py-2 lg:py-0 ">
+               <a
+                 class="text-gray-900 hover:pb-4 hover:border-b-4 hover:border-[#14176C] text-lg duration-200  hover:text-[#F7A400] "
+                 href="contact.html"
+               >
+               যোগাযোগ
+               </a>
+             </li>
               
-        </span>
-        <span class="relative group-hover:text-white"> ভাড়া করুন </span>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-[2px] top-[30%] group-hover:text-white">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-          </svg>
-        </a></div>   <!--button end  -->
+             <a href="#" class="bg-black p-4 flex items-center justify-center gap-x-3 cursor-pointer rounded-2xl hover:bg-gray-900 mt-2">
+               <p class="text-white font-semibold">মোবাইল অ্যাপ</p>
+               <i class="fa-solid fa-square-arrow-up-right text-gray-700"></i>
+             </a>
+             <a href="#" class="bg-black text-white p-4 flex items-center justify-center gap-x-2 rounded-xl mt-2 hover:bg-gray-900">
+               <p class="text-white text-lg">লগইন</p>
+               <i class="fa-solid fa-user"></i>
+             </a>
+           </ul>
+         </nav>
+       </div>
+     </nav>
+     <div class="grid sm:grid-cols-2">
+       <div>
+         <div class="">
+           <p class="text-2xl text-center pl-4 sm:text-4xl font-semibold flex items-start pt-5 sm:items-center sm:justify-center sm:pt-44 text-gray-900">বাংলাদেশের সবচেয়ে বৃহৎ <br> <br> গাড়ি ভাড়া সেবা</p>
+       
+           <!--button start  -->
+           <div class="flex items-center p-8 sm:items-center sm:justify-center  sm:pt-28  sm:mb-4">   <a href="#_" class="px-10 py-3 items-center relative rounded group overflow-hidden   bg-gradient-to-r from-orange-200 to-yellow-100 text-gray-900 inline-block font-bold">
+               <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0  bg-gradient-to-r from-neutral-700 to-slate-500 group-hover:h-full opacity-90">
+                   
+                     
+               </span>
+               <span class="relative group-hover:text-white"> ভাড়া করুন </span>
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-[2px] top-[30%] group-hover:text-white">
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                 </svg>
+               </a></div>   <!--button end  -->
+       
+               
+       
+         </div>
+         <div class="sm:text-gray-900 sm:text-[20px]  sm:flex  sm:justify-normal sm:items-center sm:gap-3 sm:rotate-90 sm:absolute sm:bottom-[30%] sm:left-[2%] hidden">
+           <p class="font-bold">আমাদের অনুসরণ করুন---</p>
+           <i class="fa-brands fa-facebook hover:text-[#F7A400] cursor-pointer"></i>
+           <i class="fa-brands fa-twitter hover:text-[#F7A400] cursor-pointer"></i>
+           <i class="fa-brands fa-instagram hover:text-[#F7A400] cursor-pointer"></i>
+           <i class="fa-brands fa-pinterest hover:text-[#F7A400] cursor-pointer"></i>
+           <i class="fa-brands fa-linkedin-in hover:text-[#F7A400] cursor-pointer"></i>
+           
+       </div>
+       </div>
+       <div class="relative">
+         <div class="bg-orange-500 w-[350px] h-[500px] ml-6 sm:w-[600px] sm:h-[700px] sm:mt-36 sm:ml-10 rounded-2xl ">
+           
+         </div>
+         <img class="   absolute  top-[32%] sm:right-[29%]" src="/images/header.png" alt="">
+       </div>
+     </div>
+   </section>  
 
-        <img class="w-20 absolute top-[15%] left-[20%] animate-spin" src="/images/no-image-230.png" alt="">
 
-  </div>
-  <div class="sm:text-slate-200 sm:text-[20px]  sm:flex  sm:justify-normal sm:items-center sm:gap-3 sm:rotate-90 sm:absolute sm:bottom-[40%] sm:right-[8%] hidden">
-    <p class="font-bold">আমাদের অনুসরণ করুন---</p>
-    <i class="fa-brands fa-facebook hover:text-[#F7A400] cursor-pointer"></i>
-    <i class="fa-brands fa-twitter hover:text-[#F7A400] cursor-pointer"></i>
-    <i class="fa-brands fa-instagram hover:text-[#F7A400] cursor-pointer"></i>
-    <i class="fa-brands fa-pinterest hover:text-[#F7A400] cursor-pointer"></i>
-    <i class="fa-brands fa-linkedin-in hover:text-[#F7A400] cursor-pointer"></i>
-    
-</div>
-</section>
+
+
+      
+
+ 
 
     <!-- header End -->
 
     <!-- Banner Start -->
 
-    <section class="container mx-auto py-20">
+    <section class="container mx-auto py-20 border-b border-b-gray-500">
 
-        <div class="flex items-center justify-center gap-x-8">
+        <div class="sm:flex  grid grid-cols-2 p-3 sm:items-center sm:justify-center sm:gap-x-8">
             
             <img class="w-28" src="/images/banner-1.jpg" alt="">
             <img class="w-24" src="/images/banner-2.jpg" alt="">
@@ -188,7 +233,7 @@
     <!-- About Us Start -->
 
     <section class="container mx-auto  p-2 rounded-lg">
-        <div class="grid grid-cols-3 p-2 gap-x-3">
+        <div class="grid sm:grid-cols-3 p-2 gap-x-3">
             <div>
                 <h1 class="text-4xl font-semibold text-gray-950 py-7">আমাদের সম্পর্কে</h1>
                 <p class="text-lg py-5">গাড়ি ভাডা.কম-এ স্বাগতম, নির্ভরযোগ্য, সুবিধাজনক এবং সাশ্রয়ী মূল্যের গাড়ি ভাড়ার জন্য আপনার বিশ্বস্ত অংশীদার।<br> আপনি সপ্তাহান্তে ভ্রমণের পরিকল্পনা করছেন, ব্যবসায়িক ভ্রমণের পরিকল্পনা করছেন বা দৈনন্দিন ব্যবহারের জন্য কেবল একটি গাড়ির <br> প্রয়োজন, আমরা আপনাকে কভার করেছি। আমাদের বৈচিত্র্যময় বহরে কমপ্যাক্ট গাড়ি থেকে শুরু করে বিলাসবহুল SUV <br> পর্যন্ত সবকিছুই রয়েছে, যা নিশ্চিত করে যে আপনি আপনার প্রয়োজনের জন্য নিখুঁত গাড়ি খুঁজে পেতে পারেন।
@@ -227,9 +272,9 @@
                 <p class="text-[#8f91c5]">আপনার গাড়ি ভাড়ার প্রয়োজনের জন্য <br> আমাদের প্রাথমিক পরিষেবা</p>
                 <p class="text-[#8f91c5]">আমরা শীর্ষস্থানীয় সমাধান প্রদানে গর্বিত! আমাদের <br> প্রিমিয়ার পরিষেবাগুলি  একটি নির্বিঘ্ন এবং সহজ গাড়ি ভাড়ার <br> অভিজ্ঞতা নিশ্চিত  করে৷ আপনার পছন্দ অনুসারে গাড়ি অফার করছে</p>
             </div>
-            <img class="absolute top-[1%] right-[40%]" src="/images/Lightning.gif" alt="">
+            <img class="absolute hidden sm:block top-[1%] right-[40%]" src="/images/Lightning.gif" alt="">
 
-            <div class="grid grid-cols-3 pt-10 gap-x-4 p-4">
+            <div class="grid sm:grid-cols-3 gap-y-3 sm:pt-10 sm:gap-x-4 p-4">
 
                 <div class="bg-gray-800 rounded-md  p-7 shadow-xl">
                    
@@ -269,8 +314,8 @@
      <!-- Best Offer Start -->
       <section class="bg-gradient-to-r from-sky-800  to-emerald-900 mt-20">
         <div class="container mx-auto ">
-            <div class="flex items-center justify-between">
-                <div class="pt-8 pl-36">
+            <div class="grid p-5  sm:flex sm:items-center sm:justify-between">
+                <div class="sm:pt-8 sm:pl-36">
                     <h1 class="text-amber-500 text-4xl font-bold pt-8">বেস্ট অফার </h1>
                     <h2 class="text-amber-500 text-xl font-semibold pt-5">সুপার জিপ</h2>
                     <h3 class="text-amber-500 text-xl font-semibold pt-5">১০,০০০ টাকা/সারাদিন </h3>
@@ -303,7 +348,7 @@
 
         <p class="text-[#F7A400] text-4xl font-semibold text-center">আমাদের সাভিস সমূহ</p>
 
-        <div class="grid grid-cols-3 mt-10 p-4 gap-x-6 gap-y-6">
+        <div class="grid sm:grid-cols-3 sm:mt-10 p-4 sm:gap-x-6 gap-y-6">
             <div class="bg-slate-50 rounded-lg shadow-md hover:scale-105 duration-300">
                 <img class="rounded-md" src="/images/pri-3.jpg" alt="">
                 <div class="flex items-center justify-around pt-5 ">
@@ -505,97 +550,347 @@
 
       <!-- Our Packges Start-->
 
-      <section class="container mx-auto mt-10">
-        <div class="bg-black rounded-lg">
-            
-            <h1 class="text-4xl text-white font-bold text-center pt-14">আমাদের প্যাকেজ</h1>
-            <div class="flex items-center justify-center">
-            <img class="w-44" src="/images/gif.gif" alt="">
-        </div>
-            <div class="flex p-4 items-center justify-around flex-col">
-                <p class="text-white pt-10 text-lg bg-gray-900 p-6 rounded-md shadow-md">গাড়ি ভাড়া.কম এ, আমরা আপনার প্রয়োজন মেটাতে ডিজাইন করা নমনীয় প্যাকেজ অফার করি।  ছোট ভ্রমণের <br>জন্য আমাদের দৈনিক ভাড়া, বর্ধিত থাকার জন্য বা দীর্ঘমেয়াদী সুবিধার জন্য মাসিক পরিকল্পনা থেকে বেছে নিন। <br> এছাড়াও আমাদের কাছে বিশেষ ডিল* রয়েছে যা সপ্তাহান্তে ছুটি এবং ছুটির রোমাঞ্চের জন্য একচেটিয়া <br> ডিসকাউন্ট অফার করে।  আপনার ভ্রমণ পরিকল্পনা যাই হোক না কেন, আমাদের প্রতিযোগিতামূলক <br> রেট এবং যানবাহনের বিস্তৃত নির্বাচন  নিশ্চিত করে যে আপনি একটি মসৃণ এবং উপভোগ্য যাত্রা পাবেন।</p>
-                <div class="">
-                    <div class="collapse bg-sky-900 mt-6">
-                        <input type="checkbox" />
-                        <div class="collapse-title text-xl font-medium text-center text-white">ঘন্টা হিসেবে</div>
-                        <div class="collapse-content">
-                          <p class="text-white">আমাদের কাছে সকল ধরনের গাড়ী ঘন্টা হিসেবে ভাড়া করতে পারবেন। </p>
-                        </div>
-                      </div>
+      <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">আমাদের প্যাকেজ</h2>
+                <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">গাড়ি ভাড়া.কম এ, আমরা আপনার প্রয়োজন মেটাতে ডিজাইন করা নমনীয় প্যাকেজ অফার করি।  ছোট ভ্রমণের জন্য আমাদের দৈনিক ভাড়া, বর্ধিত থাকার জন্য বা দীর্ঘমেয়াদী সুবিধার জন্য মাসিক পরিকল্পনা থেকে বেছে নিন।  এছাড়াও আমাদের কাছে বিশেষ ডিল* রয়েছে যা সপ্তাহান্তে ছুটি এবং ছুটির রোমাঞ্চের জন্য একচেটিয়া  ডিসকাউন্ট অফার করে।  আপনার ভ্রমণ পরিকল্পনা যাই হোক না কেন, আমাদের প্রতিযোগিতামূলক  রেট এবং যানবাহনের বিস্তৃত নির্বাচন  নিশ্চিত করে যে আপনি একটি মসৃণ এবং উপভোগ্য যাত্রা পাবেন।</p>
+            </div>
+            <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+                <!-- Pricing Card -->
+                <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">ঘন্টা হিসেবে</h3>
+                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">আমাদের কাছে সকল ধরনের গাড়ী ঘন্টা হিসেবে ভাড়া করতে পারবেন।</p>
+                    <div class="flex justify-center items-baseline my-8">
+                        <span class="mr-2 text-5xl font-extrabold">$২৯</span>
+                        <span class="text-gray-500 dark:text-gray-400">/ঘন্টা</span>
+                    </div>
+                    <!-- List -->
+                    <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>কমপ্যাক্ট এবং জ্বালানি সাশ্রয়ী গাড়ি</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>আনলিমিটেড মাইলেজ</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>২৪/৭ রাস্তার পাশে সহায়তা<span class="font-semibold"></span></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>জিপিএস নেভিগেশন সিস্টেম <span class="font-semibold"></span></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>প্রশস্ত মিনিভ্যান বা এসইউভি <span class="font-semibold"></span></span>
+                        </li>
+                       
+                    </ul>
+                    <a href="#" class="text-white bg-[#14176C] hover:bg-[#F7A400] focus:ring-4 focus:ring-primary-200 font-medium rounded-lg px-5 py-2.5 text-center dark:text-white duration-300 dark:focus:ring-primary-900">বুকিং করুন </a>
+                </div>
+                <!-- Pricing Card -->
+                <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">আপ-ডাউন </h3>
+                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">আমাদের কাছে সকল ধরনের গাড়ী আপ-ডাউন  হিসেবে ভাড়া করতে পারবেন।</p>
+                    <div class="flex justify-center items-baseline my-8">
+                        <span class="mr-2 text-5xl font-extrabold">$৯৯</span>
+                        <span class="text-gray-500 dark:text-gray-400">/আপ-ডাউন </span>
+                    </div>
+                      <!-- List -->
+                      <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>কমপ্যাক্ট এবং জ্বালানি সাশ্রয়ী গাড়ি</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>আনলিমিটেড মাইলেজ</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>২৪/৭ রাস্তার পাশে সহায়তা<span class="font-semibold"></span></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>জিপিএস নেভিগেশন সিস্টেম <span class="font-semibold"></span></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>প্রশস্ত মিনিভ্যান বা এসইউভি <span class="font-semibold"></span></span>
+                        </li>
+                       
+                    </ul>
+                    <a href="#" class="text-white bg-[#14176C] hover:bg-[#F7A400] focus:ring-4 focus:ring-primary-200 font-medium rounded-lg px-5 py-2.5 text-center dark:text-white duration-300 dark:focus:ring-primary-900">বুকিং করুন </a>
+                </div>
+                <!-- Pricing Card -->
+                <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">সারাদিন</h3>
+                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">আমাদের কাছে সকল ধরনের গাড়ী সারাদিন হিসেবে ভাড়া করতে পারবেন।</p>
+                    <div class="flex justify-center items-baseline my-8">
+                        <span class="mr-2 text-5xl font-extrabold">$৪৯৯</span>
+                        <span class="text-gray-500 dark:text-gray-400">/ফুল-ডে</span>
+                    </div>
+                      <!-- List -->
+                      <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>কমপ্যাক্ট এবং জ্বালানি সাশ্রয়ী গাড়ি</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>আনলিমিটেড মাইলেজ</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>২৪/৭ রাস্তার পাশে সহায়তা<span class="font-semibold"></span></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>জিপিএস নেভিগেশন সিস্টেম <span class="font-semibold"></span></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>প্রশস্ত মিনিভ্যান বা এসইউভি <span class="font-semibold"></span></span>
+                        </li>
+                       
+                    </ul>
+                    <a href="#" class="text-white bg-[#14176C] hover:bg-[#F7A400] focus:ring-4 focus:ring-primary-200 font-medium rounded-lg px-5 py-2.5 text-center dark:text-white duration-300 dark:focus:ring-primary-900">বুকিং করুন </a>
+                </div>
 
+                 <!-- Pricing Card -->
+                 <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">রিজার্ভ সাভিস </h3>
+                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">আমাদের কাছে সকল ধরনের গাড়ী রিজার্ভ সাভিস হিসেবে ভাড়া করতে পারবেন।</p>
+                    <div class="flex justify-center items-baseline my-8">
+                        <span class="mr-2 text-5xl font-extrabold">$৯৯৯</span>
+                        <span class="text-gray-500 dark:text-gray-400">/১দিন</span>
+                    </div>
+                      <!-- List -->
+                      <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>কমপ্যাক্ট এবং জ্বালানি সাশ্রয়ী গাড়ি</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>আনলিমিটেড মাইলেজ</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>২৪/৭ রাস্তার পাশে সহায়তা<span class="font-semibold"></span></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>জিপিএস নেভিগেশন সিস্টেম <span class="font-semibold"></span></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>প্রশস্ত মিনিভ্যান বা এসইউভি <span class="font-semibold"></span></span>
+                        </li>
+                       
+                    </ul>
+                    <a href="#" class="text-white bg-[#14176C] hover:bg-[#F7A400] focus:ring-4 focus:ring-primary-200 font-medium rounded-lg px-5 py-2.5 text-center dark:text-white duration-300 dark:focus:ring-primary-900">বুকিং করুন </a>
+                </div>
 
-                      <div class="collapse bg-sky-900 mt-4">
-                        <input type="checkbox" />
-                        <div class="collapse-title text-xl font-medium text-center text-white">১ ডাউন</div>
-                        <div class="collapse-content">
-                          <p class="text-white">আমাদের কাছে সকল ধরনের গাড়ী ১ ডাউন হিসেবে ভাড়া করতে পারবেন। </p>
-                        </div>
-                      </div>
+                 <!-- Pricing Card -->
+                 <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">ছুটিরদিন স্পেশাল </h3>
+                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">আপনাদের ছুটিরদিনটাকে স্পেশাল করতে আমাদের কাছে রয়েছে বিশেষ অফার। </p>
+                    <div class="flex justify-center items-baseline my-8">
+                        <span class="mr-2 text-5xl font-extrabold">$৪৯৯</span>
+                        <span class="text-gray-500 dark:text-gray-400">/ফুল-ডে</span>
+                    </div>
+                      <!-- List -->
+                      <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>কমপ্যাক্ট এবং জ্বালানি সাশ্রয়ী গাড়ি</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>আনলিমিটেড মাইলেজ</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>২৪/৭ রাস্তার পাশে সহায়তা<span class="font-semibold"></span></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>জিপিএস নেভিগেশন সিস্টেম <span class="font-semibold"></span></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>প্রশস্ত মিনিভ্যান বা এসইউভি <span class="font-semibold"></span></span>
+                        </li>
+                       
+                    </ul>
+                    <a href="#" class="text-white bg-[#14176C] hover:bg-[#F7A400] focus:ring-4 focus:ring-primary-200 font-medium rounded-lg px-5 py-2.5 text-center dark:text-white duration-300 dark:focus:ring-primary-900">বুকিং করুন </a>
+                </div>
 
-                      <div class="collapse bg-sky-900 mt-4">
-                        <input type="checkbox" />
-                        <div class="collapse-title text-xl font-medium text-center text-white">আপ-ডাউন </div>
-                        <div class="collapse-content">
-                          <p class="text-white">আমাদের কাছে সকল ধরনের গাড়ী আপ-ডাউন  হিসেবে ভাড়া করতে পারবেন। </p>
-                        </div>
-                      </div>
-
-                      <div class="collapse bg-sky-900 mt-4">
-                        <input type="checkbox" />
-                        <div class="collapse-title text-xl font-medium text-center text-white">সারাদিন </div>
-                        <div class="collapse-content">
-                          <p class="text-white">আমাদের কাছে সকল ধরনের গাড়ী সারাদিন হিসেবে ভাড়া করতে পারবেন। </p>
-                        </div>
-                      </div>
-
-                      <div class="collapse bg-sky-900 mt-4">
-                        <input type="checkbox" />
-                        <div class="collapse-title text-xl font-medium text-center text-white">রিজার্ভ সাভিস </div>
-                        <div class="collapse-content">
-                          <p class="text-white">আমাদের কাছে সকল ধরনের গাড়ী রিজার্ভ সাভিস হিসেবে ভাড়া করতে পারবেন। </p>
-                        </div>
-                      </div>
-
-                      <div class="collapse bg-sky-900 mt-4">
-                        <input type="checkbox" />
-                        <div class="collapse-title text-xl font-medium text-center text-white">ছুটিরদিন স্পেশাল  </div>
-                        <div class="collapse-content">
-                          <p class="text-white">আপনাদের ছুটিরদিনটাকে স্পেশাল করতে আমাদের কাছে রয়েছে বিশেষ অফার। </p>
-                        </div>
-                      </div>
-
-
+                 <!-- Pricing Card -->
+                 <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">১ ডাউন</h3>
+                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">আমাদের কাছে সকল ধরনের গাড়ী ১ ডাউন হিসেবে ভাড়া করতে পারবেন।</p>
+                    <div class="flex justify-center items-baseline my-8">
+                        <span class="mr-2 text-5xl font-extrabold">$১০০</span>
+                        <span class="text-gray-500 dark:text-gray-400">/১ ডাউন</span>
+                    </div>
+                      <!-- List -->
+                      <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>কমপ্যাক্ট এবং জ্বালানি সাশ্রয়ী গাড়ি</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>আনলিমিটেড মাইলেজ</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>২৪/৭ রাস্তার পাশে সহায়তা<span class="font-semibold"></span></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>জিপিএস নেভিগেশন সিস্টেম <span class="font-semibold"></span></span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>প্রশস্ত মিনিভ্যান বা এসইউভি <span class="font-semibold"></span></span>
+                        </li>
+                       
+                    </ul>
+                    <a href="#" class="text-white bg-[#14176C] hover:bg-[#F7A400] focus:ring-4 focus:ring-primary-200 font-medium rounded-lg px-5 py-2.5 text-center dark:text-white duration-300 dark:focus:ring-primary-900">বুকিং করুন </a>
                 </div>
 
             </div>
         </div>
-
       </section>
 
       <!-- Our Packges End-->
+
+      <!-- FAQ Start -->
+       <section class="container mx-auto">
+
+        <section class="bg-[#1D1D1D] text-gray-100 py-32 min-h-screen rounded-xl">
+            <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
+              <h2 class="mb-12 text-4xl font-bold leadi text-center sm:text-5xl">প্রায়শই জিজ্ঞাসিত প্রশ্ন</h2>
+              <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+                <details>
+                  <summary class="py-2 outline-none cursor-pointer focus:underline text-lg">গাড়ি ভাড়া করার জন্য আমার কী কী কাগজপত্র দরকার?</summary>
+                  <div class="px-4 pb-4">
+                    <p class="text-lg">আপনার একটি বৈধ ড্রাইভার লাইসেন্স, আপনার নামে একটি ক্রেডিট বা ডেবিট কার্ড এবং কার্ডের নামের সাথে মেলে এমন একটি আইডি প্রয়োজন।</p>
+                  </div>
+                </details>
+                <details>
+                  <summary class="py-2 outline-none cursor-pointer focus:underline text-lg">একটি গাড়ী ভাড়া জন্য একটি বয়স প্রয়োজন আছে?</summary>
+                  <div class="px-4 pb-4">
+                    <p class="text-lg">সর্বনিম্ন বয়স সাধারণত 21। যাইহোক, কিছু যানবাহন বিভাগের জন্য ভাড়াটেদের 25 বা তার বেশি বয়সের প্রয়োজন হতে পারে।.</p>
+                  </div>
+                </details>
+                <details>
+                  <summary class="py-2 outline-none cursor-pointer focus:underline text-lg">আমি কি আমার ভাড়ায় একটি অতিরিক্ত ড্রাইভার যোগ করতে পারি?</summary>
+                  <div class="px-4 pb-4">
+                    <p class="text-lg">হ্যাঁ, অতিরিক্ত ফি দিয়ে অতিরিক্ত ড্রাইভার যোগ করা যেতে পারে। তাদের অবশ্যই প্রাথমিক ভাড়াটের মতো একই প্রয়োজনীয়তা পূরণ করতে হবে।</p>
+                  </div>
+                </details>
+                <details>
+                  <summary class="py-2 outline-none cursor-pointer focus:underline text-lg">আপনার জ্বালানী নীতি কি?</summary>
+                  <div class="px-4 pb-4">
+                    <p class="text-lg">আমাদের বেশিরভাগ যানবাহন ফুল-টু-ফুল ফুয়েল পলিসি নিয়ে আসে, যার অর্থ আপনাকে সম্পূর্ণ ট্যাঙ্ক সহ গাড়িটি ফেরত দিতে হবে।</p>
+                  </div>
+                </details>
+                <details>
+                  <summary class="py-2 outline-none cursor-pointer focus:underline text-lg">একটি গাড়ী ভাড়া করার জন্য আমার কি বীমা প্রয়োজন?</summary>
+                  <div class="px-4 pb-4">
+                    <p class="text-lg">মৌলিক বীমা সাধারণত অন্তর্ভুক্ত করা হয়, তবে আপনি আরও ব্যাপক সুরক্ষার জন্য অতিরিক্ত কভারেজ যোগ করতে বেছে নিতে পারেন।</p>
+                  </div>
+                </details>
+                <details>
+                  <summary class="py-2 outline-none cursor-pointer focus:underline text-lg">গাড়িটি ভেঙে পড়লে আমার কী করা উচিত?</summary>
+                  <div class="px-4 pb-4">
+                    <p class="text-lg">একটি ব্রেকডাউন ঘটনা, আমাদের 24/7 রাস্তার পাশে সহায়তা কল করুন. যোগাযোগের বিশদ ভাড়া চুক্তিতে দেওয়া হয়।</p>
+                  </div>
+                </details>
+                <details>
+                  <summary class="py-2 outline-none cursor-pointer focus:underline text-lg">আমি কি আমার ভাড়ার মেয়াদ বাড়াতে পারি?</summary>
+                  <div class="px-4 pb-4">
+                    <p class="text-lg">হ্যাঁ, যদি গাড়ি পাওয়া যায়, আপনি আপনার ভাড়া বাড়াতে পারেন। এক্সটেনশন নিশ্চিত করতে যত তাড়াতাড়ি সম্ভব আমাদের সাথে যোগাযোগ করুন.</p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </section>
+          
+
+
+
+        
+       </section>
+
+
+      <!-- FAQ End -->
 
        <!-- Our Mobile Apps Start-->
 
        <section class="container mx-auto">
 
-        <h1 class="text-4xl font-bold text-center py-14 text-[#14176C]">আমাদের মোবাইল এপস</h1>
+        <h1 class="text-4xl font-bold text-center py-14 text-[#14176C]">আমাদের মোবাইল অ্যাপস</h1>
 
-        <div class="flex items-center justify-center bg-gray-700 p-3 rounded-lg gap-x-2 cursor-pointer">
+        <div class="flex gap-x-6 p-5">
+            <div>
+            <h2 class="text-lg text-gray-900 font-semibold py-5 ml-2">ভাড়া দেওয়ার জন্য</h2>
+            <img class="rounded-lg" src="/images/mobile-1.jpg" alt="">
+        </div>
+        <div>
+            <h2 class="text-lg text-gray-900 font-semibold py-5 ml-2">ভাড়া নেওয়ার  জন্য</h2>
+            <img class="rounded-lg" src="/images/mobile-3.jpg" alt="">
+        </div>
+        </div>
+        <div class="flex items-center justify-center gap-x-5 pt-5">
+            <a href="#" class="">
+                <img class="w-40 border p-2 hover:scale-105 duration-200 rounded-md shadow-md" src="/images/store.jpg" alt="">
+            </a>
+            <a href="#" class="">
+                <img class="w-40 border p-2 hover:scale-105 duration-200 rounded-md shadow-md" src="/images/play.png" alt="">
+            </a>
+            
+            
+        </div>
 
-        <img class="rounded-md" src="/images/mobile-1.jpg" alt="">
-
-        <img class="rounded-md" src="/images/mobile-3.jpg" alt="">
-    </div>
-
-    <div class="flex items-center justify-center pt-4 gap-x-1">
-        <a href="#">
-            <img class="w-44" src="/images/play.png" alt="">
-        </a>
-
-        <a href="#">
-            <img class="w-44" src="/images/store.jpg" alt="">
-        </a>
-    </div>
+        
 
        </section>
 
@@ -608,7 +903,7 @@
         <div class="text-white text-center py-10">
             <h1 class="text-[#abd9d9] text-lg font-bold">আমাদের টেস্টোমনিয়াল</h1>
             <h2 class="text-4xl w-96 mx-auto leading-normal font-bold mb-12 pt-4">আমাদের কাস্টমার গন কি বলে </h2>
-            <div class="flex max-w-5xl mx-auto gap-8 group">
+            <div class="grid  sm:flex max-w-5xl mx-auto gap-8 group">
                 <div class="bg-white/10 group-hover:blur-sm hover:!blur-none  cursor-pointer duration-500 group-hover:scale-[0.85] hover:!scale-100   p-8 rounded-xl mix-blend-luminosity">
                     <img class="h-20 mx-auto rounded-full" src="/images/team_img02.jpg" alt="">
                     <h4 class="text-xl font-bold pt-4">আমেনা খাতুন </h4>
@@ -665,6 +960,13 @@
 
 
             </div>
+            <a href="#" class="px-6 py-3 relative rounded group font-medium text-white  inline-block mt-8">
+                <span class="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-purple-600 to-blue-500"></span>
+                <span class="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded opacity-50 from-purple-600 to-blue-500"></span>
+                <span class="absolute inset-0 w-full h-full transition-all duration-200 ease-out rounded shadow-xl bg-gradient-to-br filter group-active:opacity-0 group-hover:blur-sm from-purple-600 to-blue-500"></span>
+                <span class="absolute inset-0 w-full h-full transition duration-200 ease-out rounded bg-gradient-to-br to-purple-600 from-blue-500"></span>
+                <span class="relative text-lg">আরও দেখুন</span>
+            </a>
 
         </div>
 
@@ -672,7 +974,183 @@
 
 
 
-       <!--Testimonial End->
+      <!-- Contact us Start  -->
+
+      <section class="body-font relative bg-gray-900 text-gray-400 ">
+
+        <div class="container mx-auto px-5 py-24">
+          
+          <div class="mb-12 flex w-full flex-col text-center">
+            <h1 class="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">আমাদের সাথে যোগাযোগ করুন</h1>
+            <p class="mx-auto text-base leading-relaxed lg:w-2/3">আমাদের সাথে যোগাযোগ বিনা দ্বিধায়! আপনার একটি প্রশ্ন, প্রতিক্রিয়া, বা একটি সহযোগিতার প্রস্তাব থাকুক না কেন, আমরা আপনার কাছ থেকে শুনতে চাই।
+            </p>
+          </div>
+      
+          <div class="mx-auto md:w-2/3 lg:w-1/2">
+            <div class="-m-2 flex flex-wrap">
+      
+              <!-- form -->
+              <div class="w-1/2 p-2">
+                <div class="relative">
+                  <input type="text" id="name" name="name" class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Name" />
+                  <label for="name" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">নাম</label>
+                </div>
+              </div>
+              <div class="w-1/2 p-2">
+                <div class="relative">
+                  <input type="email" id="email" name="email" class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Email" />
+                  <label for="email" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">ইমেইল </label>
+                </div>
+              </div>
+              <div class="mt-4 w-full p-2">
+                <div class="relative">
+                  <textarea id="message" name="message" class="peer h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-6 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Message"></textarea>
+                  <label for="message" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">মেসেজ</label>
+                </div>
+              </div>
+              <div class="w-full p-2">
+                <button   class="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none">মেসেজ পাঠান</button>
+              </div>
+      
+      
+             
+      
+        </div>
+        
+      </section>
+
+      <!-- Get In Touch End -->
+
+
+         <!--Top Footer Start-->
+
+     <section class="w-full h-full sm:h-auto pb-16 bg-right-top bg-no-repeat relative" style="background-image: url(/images/footer_shape02.png);">
+
+        <div class="container mx-auto ">
+
+            <div class="grid sm:grid-cols-4">
+
+                <div class="flex flex-col items-center justify-center pt-[120px] ">
+                    <div class="flex items-center justify-center gap-x-2">
+                    <a href="#">
+                    <img class="w-[40px]" src="/images/logo-3.svg" alt="">
+                    
+                </a>
+                <p class="text-[#191D88] font-semibold text-xl">গাড়ি_ভাড়া.কম</p>
+            </div>
+                    <p class="text-[#191D88] font-semibold pt-7 text-center">আমরা আপনাদের সেবায় ২৪ ঘন্টা  ৭দিন প্রস্তুত।<br>  আপনাদের আরামদায়ক যাত্রাই আমাদের উদ্দেশ্য .</p>
+                    <div class="flex gap-x-3 pt-7">
+                    <div class="w-10 h-10  bg-[#cfe2ff] rounded-sm flex items-center justify-center group hover:bg-[#191D88] cursor-pointer">
+                    <i class="fa-brands fa-facebook-f text-[#191D88] text-xl group-hover:text-white"></i>
+                </div>
+                <div class="w-10 h-10  bg-[#cfe2ff] rounded-sm flex items-center justify-center group hover:bg-[#191D88] cursor-pointer">
+                    <i class="fa-brands fa-twitter text-[#191D88] text-xl group-hover:text-white"></i>
+                </div>
+                <div class="w-10 h-10  bg-[#cfe2ff] rounded-sm flex items-center justify-center group hover:bg-[#191D88] cursor-pointer">
+                    <i class="fa-brands fa-instagram text-[#191D88] text-xl group-hover:text-white"></i>
+                </div>
+                <div  class="w-10 h-10  bg-[#cfe2ff] rounded-sm flex items-center justify-center group hover:bg-[#191D88] cursor-pointer">
+                    <i class="fa-brands fa-pinterest text-[#191D88] text-xl group-hover:text-white"></i>
+                </div>
+                <div  class="w-10 h-10  bg-[#cfe2ff] rounded-sm flex items-center justify-center group hover:bg-[#191D88] cursor-pointer">
+                    <i class="fa-brands fa-youtube text-[#191D88] text-xl group-hover:text-white"></i>
+                </div>
+            </div>
+                </div>
+
+                <div>
+                    
+                    
+                    <div class="flex flex-col items-center justify-center pt-[120px]">
+                        <p class="text-[#191D88] text-xl font-bold  ">আমাদের সম্পর্কে তথ্য</p>
+                        <div class="border-b-4 border-b-[#F7A400] w-10 h-3 rounded-sm ">
+
+                        </div>
+                 
+            </div>
+                <div class="flex gap-x-3 items-center justify-center pt-4">
+                <i class="fa-solid fa-phone text-[#191D88] text-xl"></i>
+                <a class="text-[#191D88] text-xl hover:text-[#F7A400]" type="telephone" href="#">+৮৮-০১৭২৭২৬২২</a>
+            </div>
+
+            <div class="flex gap-x-3 items-center justify-center pt-4">
+                <i class="fa-regular fa-envelope text-[#191D88] text-xl"></i>
+                <a class="text-[#191D88] text-xl hover:text-[#F7A400]" href="#">info@bpartho</a>
+            </div>
+
+            <div class="flex gap-x-3 items-center justify-center pt-4 ">
+                <i class="fa-solid fa-location-dot text-[#191D88] text-xl"></i>
+                <p class="text-[#191D88] text-xl">সি কে ঘোষ রোড় <br> ময়মনসিংহ , <br> বাংলাদেশ .</p>
+            </div>
+
+                </div>
+
+                <div>
+
+                    <div class="flex flex-col items-center justify-center pt-[120px]">
+                        <p class="text-[#191D88] text-xl font-bold  ">টপ_লিংক </p>
+                        <div class="border-b-4 border-b-[#F7A400] w-10 h-3 rounded-sm ">
+
+                        </div>
+                  </div>
+
+                  <div class="flex flex-col p-4 items-center justify-center">
+                    <a class="p-2 px-4 text-[#191D88] hover:text-[#F7A400] font-semibold group" href="#">
+                        এটা কিভাবে কাজ করে
+                        <div class="bg-amber-500 h-[2px] w-0 group-hover:w-[100px] transition-all duration-500"></div>
+                    </a>
+                    <a class="p-2 px-4 text-[#191D88] font-semibold hover:text-[#F7A400] group" href="#">
+                        অ্যান্ড্রয়েড অ্যাপস
+                        <div class="bg-amber-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                    </a>
+                    <a class="p-2 px-4 text-[#191D88] font-semibold hover:text-[#F7A400]  group" href="#">
+                        টেস্টিমোনিয়াল
+                        <div class="bg-amber-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                    </a>
+
+
+                    
+
+                    <a class="p-2 px-4 text-[#191D88] font-semibold hover:text-[#F7A400] group" href="#">
+                        আমাদের প্যাকেজ সমূহ 
+                        <div class="bg-amber-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                    </a>
+
+
+                </div>
+                    
+
+                </div>
+
+                <div>
+                    <div class="flex flex-col items-center justify-center pt-[120px]">
+                        <p class="text-[#191D88] text-xl font-bold  ">ইনস্টাগ্রাম পোস্ট</p>
+                        <div class="border-b-4 border-b-[#F7A400] w-10 h-3 rounded-sm ">
+
+                        </div>
+                        <div class="grid grid-cols-3 pt-5 gap-4 ">
+                            <img class="w-[90px] h-[90px] rounded-md cursor-pointer" src="/images/about-1.jpg" alt="">
+                            <img class="w-[90px] h-[90px] rounded-md cursor-pointer"  src="/images/pri-2.jpg" alt="">
+                            <img class="w-[90px] h-[90px] rounded-md cursor-pointer" src="/images/bus.jpg" alt="">
+                            <img class="w-[90px] h-[90px] rounded-md cursor-pointer" src="/images/ambu-4.jpg" alt="">
+                            <img class="w-[90px] h-[90px] rounded-md cursor-pointer" src="/images/jeep.jpg" alt="">
+                            <img class="w-[90px] h-[90px] rounded-md cursor-pointer" src="/images/hay-2.jpg" alt="">
+                        </div>
+                  </div>
+                </div>
+
+               
+           
+
+            </div>
+            <img class="w-[250px] absolute bottom-0 left-0" src="/images/footer_shape01.png" alt="">
+            <img  class=" absolute top-[18%] right-[4%]" src="/images/footer_shape03.png" alt="">
+
+        </div>
+
+     </section>
+
+     <!--Top Footer End-->
 
     
 </body>
